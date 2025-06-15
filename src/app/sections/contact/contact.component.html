@@ -1,1 +1,36 @@
-<p>contact works!</p>
+<section class="contact" *ngIf="contactDetails">
+  <h2 class="section-title">Contact Me</h2>
+
+  <div class="contact-container">
+    <div class="info-item" *ngIf="contactDetails.Email">
+      <i class="bi bi-envelope"></i>
+      <a [href]="'mailto:' + contactDetails.Email">
+        {{ contactDetails.Email }}
+      </a>
+    </div>
+
+    <div class="info-item" *ngIf="contactDetails.Phone">
+      <i class="bi bi-phone"></i>
+      <span>{{ contactDetails.Phone }}</span>
+    </div>
+
+    <div class="info-item" *ngIf="contactDetails.City">
+      <i class="bi bi-geo-alt"></i>
+      <span>{{ contactDetails.City }}</span>
+    </div>
+
+    <div class="info-item" *ngIf="contactDetails.linkedin">
+      <i class="bi bi-linkedin"></i>
+      <a [href]="contactDetails.linkedin" target="_blank">
+        LinkedIn Profile
+      </a>
+    </div>
+
+    <div class="info-item" *ngIf="contactDetails.github">
+      <i class="bi bi-github"></i>
+      <a [href]="contactDetails.github" target="_blank">
+        GitHub Profile
+      </a>
+    </div>
+  </div>
+</section>

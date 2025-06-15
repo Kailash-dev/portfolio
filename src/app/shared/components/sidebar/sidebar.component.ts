@@ -18,9 +18,7 @@ export class SidebarComponent {
 
   ngOnInit(): void {
     this.profileService.getProfile().subscribe((data) => {
-      console.log('====================================');
-      console.log("data",data);
-      console.log('====================================');
+     
       this.profile = data;
     });
   }

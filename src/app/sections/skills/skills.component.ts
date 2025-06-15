@@ -12,7 +12,7 @@ import { KeyValuePipe, NgFor, NgIf } from '@angular/common';
 export class SkillsComponent {
   skills: Record<string, string[]> | null = null;
 
-  constructor(private profileService: ProfileService) {}
+  constructor(private readonly profileService: ProfileService) {}
 
   ngOnInit(): void {
      this.profileService.getProfile().subscribe(data=>{
