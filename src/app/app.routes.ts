@@ -7,8 +7,8 @@ import { AboutComponent } from './sections/about/about.component';
 import { SkillsComponent } from './sections/skills/skills.component';
 
 export const routes: Routes = [
-  { path: '**', redirectTo: '' },
-  { path: '', component: HeroComponent },
+  { path: '', redirectTo: 'hero', pathMatch:'full' },
+  { path: 'home', component: HeroComponent },
   { path: 'about', component: AboutComponent },
   { path: 'skills', component: SkillsComponent },
   { path: 'contact', component: ContactComponent },

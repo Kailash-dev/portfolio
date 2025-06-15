@@ -1,14 +1,82 @@
 {
-  "name": "Kailash",
-  "roles": ["Full Stack Developer", "Freelancer", "AI Enthusiast"],
+  "name": "Kailash Gayari",
+  "roles": [
+    "Full Stack Developer",
+    "Freelancer",
+    "AI Enthusiast"
+  ],
   "summary": "Experienced developer with 5+ years in Angular, React, Node, and Docker. Turning ideas into scalable products.",
   "profileImage": "data/profile.jpeg",
-  "backgroundImage": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=80",
+  "backgroundImage": "data/profile2.jpeg",
   "nav": [
-    { "label": "Home", "icon": "bi-house", "route": "home" },
-    { "label": "About", "icon": "bi-person", "route": "about" },
-    { "label": "Skills", "icon": "bi-list-check", "route": "skills" },
-    { "label": "Projects", "icon": "bi-collection", "route": "projects" },
-    { "label": "Contact", "icon": "bi-envelope", "route": "contact" }
-  ]
+    {
+      "label": "Home",
+      "icon": "bi-house",
+      "route": "home"
+    },
+    {
+      "label": "About",
+      "icon": "bi-person",
+      "route": "about"
+    },
+    {
+      "label": "Skills",
+      "icon": "bi-list-check",
+      "route": "skills"
+    },
+    {
+      "label": "Projects",
+      "icon": "bi-collection",
+      "route": "projects"
+    },
+    {
+      "label": "Contact",
+      "icon": "bi-envelope",
+      "route": "contact"
+    }
+  ],
+  "about": {
+    "description": "I'm a software engineer who professionally crafts frontend and full-stack applications — and passionately rides bikes, travels, and explores new technologies. With a strong foundation in software engineering and an eye for detail, I enjoy writing clean, maintainable code that brings ideas to life. Whether it’s building scalable web interfaces or exploring the open road on two wheels, I bring energy, curiosity, and commitment to everything I do.",
+    "details": {
+      "Birthday": "September 1, 1995",
+      "Phone": "+91 9549230227",
+      "City": "Vapi, India",
+      "Degree": "Bachelor of Computer Science & Engineering",
+      "Email": "kailash514910@gmail.com",
+      "Freelance": "Available",
+      "linkedin": "https://www.linkedin.com/in/kailash-gayari-720327156/",
+      "github": "https://github.com/Kailash-dev"
+    }
+  },
+  "skills": {
+    "Frontend": [
+      "Angular",
+      "React",
+      "Vue.js",
+      "React Native",
+      "Fabric.js"
+    ],
+    "Backend": [
+      "Node.js",
+      "Express",
+      "REST APIs"
+    ],
+    "DevOps / Cloud": [
+      "Docker",
+      "AWS (EC2, S3)"
+    ],
+    "AI Tools": [
+      "ChatGPT",
+      "GitHub Copilot",
+      "AI agents for code generation"
+    ],
+    "Other Tools & Skills": [
+      "TypeScript",
+      "JavaScript",
+      "HTML5 & CSS3",
+      "Git & GitHub",
+      "Agile / SCRUM"
+    ]
+  }
+
 }
