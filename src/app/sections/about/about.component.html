@@ -1,1 +1,21 @@
-<p>about works!</p>
+<section class="about" *ngIf="about">
+  <h2>About Me</h2>
+  <p class="description">{{ about.description }}</p>
+
+  <div class="details">
+    <div
+      *ngFor="let entry of about.details | keyvalue"
+      class="detail-item"
+    >
+      <strong>{{ entry.key }}:</strong>
+      <ng-container *ngIf="entry.key === 'linkedIn' || entry.key === 'gitHub'; else plainText">
+        <a [href]="entry.value" target="_blank" rel="noopener noreferrer">
+          {{ entry.value }}
+        </a>
+      </ng-container>
+      <ng-template #plainText>
+        <span>{{ entry.value }}</span>
+      </ng-template>
+    </div>
+  </div>
+</section>
