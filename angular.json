@@ -20,6 +20,7 @@
             "outputPath": "dist/my-portfolio",
             "index": "src/index.html",
             "browser": "src/main.ts",
+
             "polyfills": [
               "zone.js"
             ],
@@ -53,7 +54,8 @@
                   "maximumError": "4kB"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "baseHref": "/portfolio/"
             },
             "development": {
               "optimization": false,

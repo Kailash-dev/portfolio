@@ -7,6 +7,6 @@ export class ProfileService {
   constructor(private readonly http: HttpClient) {}
 
   getProfile(): Observable<any> {
-    return this.http.get('/data/profile.json');
+    return this.http.get('data/profile.json');
   }
 }
