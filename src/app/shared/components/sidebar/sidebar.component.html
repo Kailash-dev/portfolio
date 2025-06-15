@@ -7,11 +7,11 @@
 
   <nav class="nav">
     <a *ngFor="let link of profile?.nav"
-       [routerLink]="link.route"
-       routerLinkActive="active"
-       [fragment]="link.route"
-       class="nav-link">
-      <i class="bi" [ngClass]="link.icon"></i> <span>{{ link.label }}</span>
-    </a>
+    [routerLink]="link.route"
+    routerLinkActive="active"
+    class="nav-link">
+    <i class="bi" [ngClass]="link.icon"></i>
+    <span>{{ link.label }}</span>
+ </a>
   </nav>
 </aside>
