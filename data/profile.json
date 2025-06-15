@@ -1,0 +1,138 @@
+{
+  "name": "Kailash Gayari",
+  "roles": [
+    "Full Stack Developer",
+    "Freelancer",
+    "AI Enthusiast"
+  ],
+  "summary": "Experienced developer with 5+ years in Angular, React, Node, and Docker. Turning ideas into scalable products.",
+  "profileImage": "data/profile.jpeg",
+  "backgroundImage": "data/profile2.jpeg",
+  "nav": [
+    {
+      "label": "Home",
+      "icon": "bi-house",
+      "route": "home"
+    },
+    {
+      "label": "About",
+      "icon": "bi-person",
+      "route": "about"
+    },
+    {
+      "label": "Skills",
+      "icon": "bi-list-check",
+      "route": "skills"
+    },
+    {
+      "label": "Projects",
+      "icon": "bi-collection",
+      "route": "projects"
+    },
+    {
+      "label": "Contact",
+      "icon": "bi-envelope",
+      "route": "contact"
+    }
+  ],
+  "about": {
+    "description": "I'm a software engineer who professionally crafts frontend and full-stack applications — and passionately rides bikes, travels, and explores new technologies. With a strong foundation in software engineering and an eye for detail, I enjoy writing clean, maintainable code that brings ideas to life. Whether it’s building scalable web interfaces or exploring the open road on two wheels, I bring energy, curiosity, and commitment to everything I do.",
+    "details": {
+      "Birthday": "September 1, 1995",
+      "Phone": "+91 9549230227",
+      "City": "Vapi, India",
+      "Degree": "Bachelor of Computer Science & Engineering",
+      "Email": "kailash514910@gmail.com",
+      "Freelance": "Available",
+      "linkedin": "https://www.linkedin.com/in/kailash-gayari-720327156/",
+      "github": "https://github.com/Kailash-dev"
+    }
+  },
+  "skills": {
+    "Frontend": [
+      "Angular",
+      "React",
+      "Vue.js",
+      "React Native",
+      "Fabric.js"
+    ],
+    "Backend": [
+      "Node.js",
+      "Express",
+      "REST APIs"
+    ],
+    "DevOps / Cloud": [
+      "Docker",
+      "AWS (EC2, S3)"
+    ],
+    "AI Tools": [
+      "ChatGPT",
+      "GitHub Copilot",
+      "AI agents for code generation"
+    ],
+    "Other Tools & Skills": [
+      "TypeScript",
+      "JavaScript",
+      "HTML5 & CSS3",
+      "Git & GitHub",
+      "Agile / SCRUM"
+    ]
+  },
+  "projects": [
+    {
+      "title": "NStream Connect (IoT Entertainment System)",
+      "type": "Product for Travel Industry",
+      "description": "A Raspberry Pi-based device installed in buses and trains offering offline streaming of movies, music, and series via SD card to user devices over local Wi-Fi.",
+      "technologies": ["Raspberry Pi", "Node.js", "Express", "Angular", "SD Card"]
+    },
+    {
+      "title": "NStream Admin Portal",
+      "type": "Web Admin Panel",
+      "description": "Admin dashboard for NStream Connect to manage media content, view analytics, device statuses, and handle remote configurations.",
+      "technologies": ["Angular", "Node.js", "MongoDB", "Bootstrap"]
+    },
+    {
+      "title": "Sosha (Design Tool like Canva)",
+      "type": "Web Application",
+      "description": "A graphic design web app similar to Canva, allowing users to create designs for social media and promotions using Fabric.js with drag-and-drop, layers, and export support.",
+      "technologies": ["Fabric.js", "Angular", "Node.js", "S3", "Express"]
+    },
+    {
+      "title": "Sosha Admin Panel",
+      "type": "Template & User Management",
+      "description": "Admin portal for Sosha to manage templates, categories, assets, and review user-generated designs for approval and platform publication.",
+      "technologies": ["Angular", "Node.js", "MongoDB", "S3"]
+    },
+    {
+      "title": "Corporate Website",
+      "type": "Business Website",
+      "description": "Fully responsive, SEO-optimized business website developed with a lightweight CMS and deployed on static hosting platforms.",
+      "technologies": ["Angular", "SCSS", "Netlify"]
+    },
+    {
+      "title": "Vipra App",
+      "type": "Community Mobile App",
+      "description": "A mobile platform tailored for the Vipra community offering Matrimony, Job Portal, and Business Listings with a modern UI and secure backend.",
+      "technologies": ["React Native", "Firebase", "Node.js", "MongoDB"]
+    },
+    {
+      "title": "Amal E-Commerce",
+      "type": "E-Commerce App",
+      "description": "Middle East-focused online store with full-stack development of search, filtering, cart, and category management features.",
+      "technologies": ["Angular", "Node.js", "Express", "MongoDB"]
+    },
+    {
+      "title": "QR Code Scanner & Rotation Detection",
+      "type": "Mobile application ",
+      "description": "App to scan QR codes and determine their rotation/orientation based on finder patterns; supports categorization and real-time detection.",
+      "technologies": ["Angular", "Canvas", "Vision Camera"]
+    },
+    {
+      "title": "Mobile Face Authentication",
+      "type": "Biometric Mobile Feature",
+      "description": "Standalone face authentication module developed for secure access, later integrated into larger client apps.",
+      "technologies": ["React Native", "Face API", "Android", "Camera"]
+    }
+  ]
+
+}
