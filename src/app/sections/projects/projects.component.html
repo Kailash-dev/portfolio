@@ -1,1 +1,17 @@
-<p>projects works!</p>
+<section class="projects">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="project-grid">
+    <div class="project-card" *ngFor="let project of projects">
+      <div>
+        <div class="project-title">{{ project.title }}</div>
+        <div class="project-type">{{ project.type }}</div>
+        <div class="project-description">{{ project.description }}</div>
+      </div>
+
+      <div class="stack-list">
+        <span class="stack-chip" *ngFor="let tech of project.technologies">{{ tech }}</span>
+      </div>
+    </div>
+  </div>
+</section>
