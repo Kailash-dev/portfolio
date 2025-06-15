@@ -1,1 +1,17 @@
-<p>hero works!</p>
+<div class="hero" [ngStyle]="{ 'background-image': 'url(' + profile?.backgroundImage + ')' }">
+  <div class="overlay"></div>
+  <div class="content" *ngIf="profile">
+    <h1 class="name">{{ profile.name }}</h1>
+    <h2 class="roles">
+      <span *ngFor="let role of profile.roles; let i = index">
+        {{ role }}<span *ngIf="i !== profile.roles.length - 1"> | </span>
+      </span>
+    </h2>
+    <p class="summary">{{ profile.summary }}</p>
+    <div class="socials">
+      <a *ngFor="let key of profile?.socials | keyvalue" [href]="key.value" target="_blank" rel="noopener">
+        <i class="bi" [ngClass]="'bi-' + key.key"></i>
+      </a>
+    </div>
+  </div>
+</div>
