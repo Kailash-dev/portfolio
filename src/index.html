@@ -2,10 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>MyPortfolio</title>
+  <title>KG Portfolio</title>
   <base href="/">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    :root {
+      --favicon-color: black;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --favicon-color: white;
+      }
+    }
+  </style>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text x='8' y='24' font-size='24' font-family='Arial' fill='black'>K</text></svg>">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
