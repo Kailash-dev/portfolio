@@ -1,6 +1,46 @@
-<div class="hero" [ngStyle]="{ 'background-image': 'url(' + profile?.backgroundImage + ')' }">
-  <div class="overlay"></div>
-  <div class="content" *ngIf="profile">
-    <h1 class="name">{{ profile.name }}</h1>
+<!--<div class="hero-wrapper">-->
+<!--  <div class="hero-content">-->
+<!--    <h1 class="greeting">Hi there 👋 I'm</h1>-->
+<!--    <h2 class="name">Kailash Gayari</h2>-->
+<!--    <h3 class="title">UI-Focused Developer with Fullstack Awareness</h3>-->
+<!--    <p class="tagline">-->
+<!--      Crafting seamless UI experiences with a deep love for frontend tech.<br />-->
+<!--      Also comfortable navigating the backend, DevOps, and cloud with AWS ☁️.<br />-->
+<!--      Rider by passion 🏍️, coder by profession 💻.-->
+<!--    </p>-->
+<!--    <button mat-button class="btn-contact" (click)="scrollToContact()">Let's Connect</button>-->
+<!--  </div>-->
+<!--  <div class="hero-image">-->
+<!--    <img src="/data/undraw_designing-components_kb05.svg" alt="Hero" />-->
+<!--  </div>-->
+<!--</div>-->
+
+<div class="hero-wrapper">
+  <div class="hero-content">
+    <h1 class="greeting">Hi there 👋 I'm</h1>
+    <h2 class="name">Kailash Gayari</h2>
+
+    <h3 class="title">
+      <span class="typing-animation">UI-Focused Developer with Fullstack Awareness</span>
+    </h3>
+
+    <p class="tagline">
+      Crafting seamless UI experiences with a deep love for frontend tech.<br />
+      Also comfortable navigating the backend, DevOps, and cloud with AWS ☁️.<br />
+      Rider by passion 🏍️, coder by profession 💻.
+    </p>
+
+
+    <button mat-button class="btn-contact" (click)="scrollToContact()">Let's Connect</button>
+
+
+  </div>
+
+  <div class="hero-image">
+    <img src="/data/undraw_designing-components_kb05.svg" alt="Hero Illustration" />
+  </div>
+
+  <div class="scroll-indicator">
+    <img src="/assets/icons/scroll-down.svg" alt="Scroll Down" />
   </div>
 </div>
