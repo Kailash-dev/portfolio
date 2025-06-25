@@ -14,9 +14,9 @@ export class ContactComponent {
 
   constructor(private profileService: ProfileService) {}
 
-  ngOnInit(): void {
-    this.profileService.getProfile().subscribe((profile) => {
-      this.contactDetails = profile?.about?.details;
-    });
-  }
+
+  onSubmit() {
+  // Replace this with actual form logic or email integration
+  alert("Your message has been sent!");
+}
 }
