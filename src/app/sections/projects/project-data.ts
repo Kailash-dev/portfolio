@@ -1,110 +1,136 @@
 export interface Project {
   title: string;
   type: string;
-  shortPoints: string[]; // ✨ New: Summary bullet points
+  shortPoints: string[];
   description: string;
   techStack: string[];
   githubUrl?: string;
   liveDemoUrl?: string;
 }
+
 export const PROJECTS: Project[] = [
   {
-    title: "NStream Connect (IoT Entertainment System)",
-    type: "Product for Travel Industry",
+    title: "Offline Media Streaming System",
+    type: "IoT & Entertainment",
     shortPoints: [
-      "Offline media streaming on transport",
+      "Offline streaming for transport systems",
       "Local Wi-Fi powered by Raspberry Pi",
-      "No internet required, SD card-based delivery"
+      "SD card-based media delivery"
     ],
-    description: `NStream Connect is an edge-computing based media streaming solution designed specifically for public transport systems such as buses and trains. Built on Raspberry Pi, it enables passengers to connect to a local Wi-Fi network and stream pre-loaded multimedia content including movies, TV shows, and music without internet connectivity. The system uses SD card storage for offline access, and leverages Angular for the user interface served locally. Node.js and Express handle content delivery and session management. The system is lightweight, scalable, and capable of functioning in low-resource environments, making it ideal for emerging markets.`,
+    description: `An edge-computing media streaming solution for buses, trains, and other public transport. 
+    Passengers connect to a local Wi-Fi network to access pre-loaded multimedia content without internet access. 
+    Built with Raspberry Pi for low-cost deployment, Angular for the local UI, and Node.js for content delivery.`,
     techStack: ["Raspberry Pi", "Node.js", "Express", "Angular", "SD Card"]
   },
   {
-    title: "NStream Admin Portal",
+    title: "Device & Media Management Portal",
     type: "Web Admin Panel",
     shortPoints: [
-      "Manage NStream devices & media",
-      "Supports OTA updates & analytics",
-      "Role-based access & real-time sync"
+      "Manage devices & media content",
+      "OTA updates & analytics dashboard",
+      "Role-based access control"
     ],
-    description: `This portal serves as the centralized command center for managing thousands of NStream Connect devices deployed across the country. Admins can upload and categorize media files, monitor device connectivity and health, push OTA (Over-the-Air) updates, and view granular usage analytics per region. The system features role-based access control, rich data visualization, and real-time sync with offline devices when connectivity resumes. The portal was built to handle high concurrency and ensure security while providing an intuitive interface for non-technical operators.`,
+    description: `Centralized web portal to manage IoT streaming devices and their content. 
+    Allows media uploads, device monitoring, over-the-air updates, and real-time usage analytics. 
+    Includes role-based access control and a responsive, user-friendly interface.`,
     techStack: ["Angular", "Node.js", "MongoDB", "Bootstrap"]
   },
   {
-    title: "Sosha (Design Tool like Canva)",
+    title: "Web-based Design Tool",
     type: "Web Application",
     shortPoints: [
-      "Drag-and-drop graphic design tool",
-      "Built using Fabric.js for canvas editing",
-      "Supports custom fonts, export, & layers"
+      "Drag-and-drop design canvas",
+      "Custom fonts, layers & templates",
+      "Export to PNG/JPEG"
     ],
-    description: `Sosha is a full-featured graphic design tool developed to bring Canva-like capabilities to the browser. It includes an interactive canvas built with Fabric.js, allowing users to add, style, drag, and layer text/images with precision. Features include undo/redo history, image cropping, template selection, layer locking, custom fonts, and export to PNG/JPEG. A key challenge was optimizing performance for canvas operations and syncing state for multi-user collaboration. The backend handles template management, user assets, and cloud export via Amazon S3. The app is also integrated with dynamic pricing for premium templates.`,
+    description: `A Canva-like browser-based design platform using Fabric.js for an interactive canvas. 
+    Supports image/text editing, custom fonts, layers, templates, and export features. 
+    Integrated with S3 for asset storage and optimized for smooth editing performance.`,
     techStack: ["Fabric.js", "Angular", "Node.js", "S3", "Express"]
   },
   {
-    title: "Sosha Admin Panel",
-    type: "Template & User Management",
+    title: "Design Tool Admin Dashboard",
+    type: "Template & Asset Management",
     shortPoints: [
-      "Template and asset moderation panel",
-      "CRUD for templates, fonts, and categories",
-      "Real-time dashboard and bulk actions"
+      "Manage templates & categories",
+      "CRUD operations for assets",
+      "Analytics & bulk actions"
     ],
-    description: `This admin dashboard is used to manage all the internal assets and content within the Sosha design platform. It supports CRUD operations for templates, fonts, categories, and user-submitted designs. Built with a clean and responsive UI, the admin panel enables moderation workflows, asset versioning, and performance dashboards for monitoring template engagement and export statistics. MongoDB is used for storing metadata while assets are hosted on S3. Advanced filtering and bulk operations were implemented to help manage thousands of templates efficiently.`,
+    description: `Admin panel for managing templates, fonts, and design assets for the web design tool. 
+    Features advanced filtering, moderation workflows, and analytics tracking. 
+    Supports large-scale template management with responsive UI.`,
     techStack: ["Angular", "Node.js", "MongoDB", "S3"]
   },
   {
-    title: "Corporate Website",
-    type: "Business Website",
+    title: "Portfolio Website",
+    type: "Personal Project",
     shortPoints: [
-      "SEO-friendly & accessible design",
+      "SEO-friendly & responsive",
       "Built with Angular & SCSS",
-      "Deployed using Netlify CI/CD"
+      "CI/CD deployment"
     ],
-    description: `This is a performance-optimized, SEO-friendly corporate website designed for a product and services company. Built using Angular and SCSS, it offers smooth page transitions, responsive layouts, and accessibility compliance. Each section (services, testimonials, contact, blog) is modular and theme-aware, allowing easy content updates. Deployed on Netlify with CI/CD integration for automatic builds, the website also features Google Lighthouse optimization and dynamic meta tag generation for search engine indexing.`,
+    description: `Fully responsive personal portfolio built with Angular and SCSS, optimized for SEO and accessibility. 
+    Showcases projects, skills, and contact details with a clean, modern UI and smooth animations.`,
     techStack: ["Angular", "SCSS", "Netlify"]
   },
   {
-    title: "Vipra App",
-    type: "Community Mobile App",
+    title: "Community Mobile App",
+    type: "Mobile Application",
     shortPoints: [
       "Community features: matrimony, jobs, businesses",
-      "Built in React Native with Firebase",
-      "Modular, scalable & realtime"
+      "Real-time sync with Firebase",
+      "Cross-platform React Native app"
     ],
-    description: `Vipra App is a cross-platform mobile solution built to digitally empower a large community through services such as Matrimony, Job Listings, and Business Directories. Built with React Native, the app leverages Firebase for real-time data updates and messaging. Each feature has its own module with form validation, image upload, bookmarking, and push notifications. Node.js microservices were used for backend logic including authentication, data management, and analytics. Special care was taken to keep the app lightweight while ensuring high reliability on low-end devices.`,
+    description: `A multi-feature mobile app serving a large community with services like Matrimony, Job Listings, and Business Directories. 
+    Built with React Native and Firebase for real-time updates, with modular architecture and push notifications.`,
     techStack: ["React Native", "Firebase", "Node.js", "MongoDB"]
   },
   {
-    title: "Amal E-Commerce",
-    type: "E-Commerce App",
+    title: "E-Commerce Platform",
+    type: "Web Application",
     shortPoints: [
-      "Middle East-focused e-commerce platform",
-      "Features include cart, coupon, orders, checkout",
-      "Supports multi-vendor and mobile optimization"
+      "Cart, checkout, and coupon features",
+      "Multi-vendor support",
+      "Mobile-first design"
     ],
-    description: `Amal is a robust e-commerce application tailored for the Middle Eastern market. It includes features such as full-text search, faceted filtering, cart management, coupon logic, order tracking, and secure checkout. The frontend was built with Angular and optimized for mobile experience. The backend handles order workflows, payment gateway integration, product management, and user authentication. The architecture supports multi-vendor setup and admin dashboards for analytics and order reports. MongoDB's flexible schema was used to manage product variations and custom metadata.`,
+    description: `An e-commerce application supporting multiple vendors, order management, product search, and secure checkout. 
+    Built with Angular for the frontend and Node.js/Express for the backend, with MongoDB for product and order data.`,
     techStack: ["Angular", "Node.js", "Express", "MongoDB"]
   },
   {
-    title: "QR Code Scanner & Rotation Detection",
-    type: "Mobile Application",
+    title: "Advanced QR Code Scanner",
+    type: "Mobile Feature",
     shortPoints: [
-      "Detects rotated & misaligned QR codes",
-      "Classifies based on missing markers",
-      "Built with Canvas & Vision Camera"
+      "Detects rotated & damaged codes",
+      "Classifies missing markers",
+      "Real-time overlay feedback"
     ],
-    description: `A next-gen QR code scanner app built with a focus on understanding QR code geometry, orientation, and partial visibility. The app can detect and interpret rotated or misaligned QR codes using finder pattern analysis. It also classifies QR codes based on missing position markers and adjusts decoding logic accordingly. Built using Vision Camera and HTML Canvas, the app offers real-time feedback with visual overlays and categorization logic. This is particularly useful for industrial or hardware environments where QR labels may not be perfectly aligned.`,
+    description: `A QR code scanner that can detect and read rotated, misaligned, or partially damaged QR codes. 
+    Uses pattern recognition and real-time overlays for better scanning in industrial settings.`,
     techStack: ["Angular", "Canvas", "Vision Camera"]
   },
   {
     title: "Mobile Face Authentication",
-    type: "Biometric Mobile Feature",
+    type: "Biometric Security",
     shortPoints: [
-      "Enterprise-level face recognition",
-      "Real-time camera feed & spoof detection",
-      "Fallback PIN & 2FA enabled"
+      "Face recognition with anti-spoofing",
+      "Fallback PIN & 2FA",
+      "Optimized for low-end devices"
     ],
-    description: `An enterprise-grade face recognition module integrated into a mobile app, supporting authentication for secure access. Utilizes Face API for detection and verification, combined with a fallback PIN system for 2FA. Real-time camera feed processing ensures user experience is smooth even on low-memory devices. The solution includes anti-spoofing techniques (like eye blink detection), camera calibration, and optional face re-enrollment. This feature was built for enterprise clients needing frictionless login while maintaining high security standards.`,
+    description: `Face authentication module with spoof detection and 2FA backup, designed for secure mobile app login. 
+    Includes real-time detection and optional face re-enrollment features.`,
     techStack: ["React Native", "Face API", "Android", "Camera"]
+  },
+  {
+    title: "What’s Cheaper Near Me – WhatsApp Bot MVP",
+    type: "Chatbot Prototype",
+    shortPoints: [
+      "AI-assisted WhatsApp bot",
+      "Find cheaper local alternatives",
+      "Built in under 6 hours"
+    ],
+    description: `An experimental WhatsApp bot MVP built in under 6 hours to help users find cheaper local alternatives for products. 
+    Created as an initial project to learn CI/CD and rapid prototyping. Focus was on speed and functionality over perfect code structure.`,
+    techStack: ["Node.js", "Express", "WhatsApp Cloud API", "OpenAI API", "Docker", "GitHub Actions"]
   }
 ];

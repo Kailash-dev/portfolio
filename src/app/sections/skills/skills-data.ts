@@ -8,6 +8,7 @@ export const SKILLS: SkillCategory[] = [
     category: 'Frontend',
     skills: [
       { name: 'Angular', level: 'Expert', icon: 'angular' },
+      { name: 'Vue', level: 'Beginner', icon: 'vue' },
       { name: 'React', level: 'Advanced', icon: 'react' },
       { name: 'HTML/CSS', level: 'Expert' },
       { name: 'TypeScript', level: 'Expert' }
@@ -18,8 +19,8 @@ export const SKILLS: SkillCategory[] = [
     skills: [
       { name: 'Node.js', level: 'Advanced' },
       { name: 'Express.js' },
-      { name: 'Spring Boot' },
-      { name: 'MySQL' }
+      { name: 'MySQL' },
+      { name: 'POSTGRES SQL' }
     ]
   },
   {
